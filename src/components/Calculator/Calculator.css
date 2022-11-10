@@ -1,0 +1,15 @@
+
+.Calculator {
+
+    display: flex;
+    flex-direction: column;
+
+    /*Temporary */
+    height: 44rem;
+    /*Temporary */
+
+
+    width: 32rem;
+    background-color: black;
+    padding: .5rem;
+}
