@@ -1,13 +1,19 @@
 import "./Screen.css";
 
-export default function Screen({}) {
+
+
+
+export default function Screen({currentOperand, previousOperand, operation}) {
+
+    const formula = (previousOperand || operation) ? `${previousOperand} ${operation}` : "0"
+
 
     return (
         <>
             <div className="formula-screen">
-                0
+                {formula}
             </div>
-            <div className="output">0</div>
+            <div className="output">{currentOperand ? currentOperand : "0"}</div>
         </>
     )
 }
